@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ぼきゃぶら</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/sample.css">
+</head>
+<body>
+<header>
+<h1>夜には必ず見直せ</h1>
+<p>覚えたら消してくれよ？</p>
+</header>
+<main>
+
+    <!-- modal window -->
+<!-- 
+    <div style="background-color:#CCC; padding : 20px;">
+        <div>
+          <input type="button" id="btn3" value="入力">
+        </div>
+        <div id="info"></div>
+      </div> -->
+      
+      <!-- 入力ダイアログ  -->
+      <!-- <div id="input" title="入力ダイアログ">
+        <table>
+          <tr>
+            <th>単語</th>
+            <td><input type="text" id="key" size="10" maxlength="10"></td>
+          </tr>   
+          <tr>
+            <th>意味</th>
+            <td><input type="text" id="memo" size="20" maxlength="30" /></td>
+          </tr>
+        </table>
+      </div> -->
+
+
+    <div class="input_area">
+        <!-- 言葉の入力部分 -->
+        <div class="words">
+            <h2 class="words_title">新たな知見</h2>
+            <textarea id="key" class="key"></textarea>
+        </div>
+        <!-- 意味の入力部分 -->
+        <div class="textarea">
+            <h2 class="text_title">言葉の意味</h2>
+            <textarea id="memo"></textarea>
+        </div>
+    </div>
+    <ul class="input_button">
+        <li class="click_button" id="save">メモ</li>
+        <!-- <li class="click_button" id="clear">Clear</li> -->
+    </ul>
+    <div id="count"></div>
+
+    <div class="google">
+        <script async src="https://cse.google.com/cse.js?cx=428a9e575dd8d4489">
+        </script>
+        <div class="gcse-searchresults-only"></div>
+    </div>
+</main>
+<ul id="list">
+
+<div id="data">
+</div>
+<!-- ここに追加データが挿入される -->
+</table>
+
+
+
+
+
+
+
+
+<div>
+    <script>
+      (function() {
+        var cx = '************:*****';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//www.google.com/cse/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
+    <gcse:search></gcse:search>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/pepper-grinder/jquery-ui.css">
+
+<!-- <script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script> -->
+<script src="js/main.js"></script>
+</body>
+</html>
